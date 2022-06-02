@@ -1,0 +1,18 @@
+Activité 1 
+
+1- Toutes les compositions ( /CDlist/CD/performance/composition)
+2- Toutes les compositions ayant un "soloist"  /CDlist/CD/performance[soloist]/composition
+3- Toutes les performances avec un seul "orchestra" mais pas de "soloist"  /CDlist/CD/performance[orchestra and not(soloist)]
+4- Tous les soloists ayant joué avec le London Symphony Orchestra sur un CD publié par Deutsche Grammopho /CDlist/CD/performance[orchestra[(text () ="London Symphony Orchestra")]]/soloist|/CDlist/CD/publisher[(text () ="Deutsche Grammopho")]
+5- Tous les CDs comportant des performances du London Symphony Orchestra /CDlist/CD[performance[orchestra[(text () ="London Symphony Orchestra")]]]
+
+
+Activité 2 
+
+1- Le cinquième livre dans la liste  //award[5]
+2- L’auteur du sixième livre dans la liste  //award[6]/author
+3- Le titre du livre qui a gagné en 2000 //award[year[text()="2000"]]/title
+4- Le nom de l'auteur du livre intitulé "Possession"  //award[title[text()="Possession"]]/author
+5- Le titre des livres dont "J M Coetzee" est l'auteur //award[author[text()="J M Coetzee"]]/title
+6- Le nom de tous les auteurs qui ont obtenu un prix depuis 1995 //award[year>=1995]/author
+7- Le nombre total de prix décerné   count (//award)
